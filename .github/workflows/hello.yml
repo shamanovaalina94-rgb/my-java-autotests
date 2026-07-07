@@ -1,0 +1,7 @@
+name: Мой первый CI-пайплайн
+on: push
+jobs:
+  test-announce:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "настройка CI/CD"
