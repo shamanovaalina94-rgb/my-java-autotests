@@ -19,6 +19,7 @@ public abstract class BaseTest {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadTimeout =  60000; // Таймаут загрузки страницы (60 секунд из-за медленного сайта)
         Configuration.timeout = 30000;          // Таймаут ожидания элементов (30 секунд из-за медленного сайта)
+        Configuration.headless = true;
 
         // Настройка Allure-отчетов для Selenide
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
