@@ -36,4 +36,4 @@ jobs:
         run: chmod +x gradlew
 
       - name: Запуск тестов через Gradle
-        run: ./gradlew test
+        run: ./gradlew test -Dselenide.headless=true
